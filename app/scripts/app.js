@@ -63,4 +63,11 @@ $scope.isSelected = function (checkTab) {
   return ($scope.tab === checkTab);
 };
 
+  $scope.showDetails = false;
+
+  $scope.toggleDetails = function() {
+    $scope.showDetails = !$scope.showDetails;
+    console.log($scope.showDetails);
+  };
+
 }]);
